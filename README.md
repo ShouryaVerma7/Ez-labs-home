@@ -1,16 +1,36 @@
-# React + Vite
+# EZ Labs Homepage - Frontend Intern Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive single-page web application built with React.js, Vite, and Tailwind CSS v4. This project demonstrates frontend development skills including responsive design, API integration, form validation, and modern UI/UX principles.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://ez-labs-home.vercel.app/
 
-## React Compiler
+## 📋 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project was developed as part of a frontend intern assessment to recreate a homepage design from Figma and implement a fully functional contact form with API integration.
 
-## Expanding the ESLint configuration
+### Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚡ **Built with Vite** - Fast development and build times
+- 🎨 **Tailwind CSS v4** - Modern utility-first CSS framework
+- 📱 **Fully Responsive** - Mobile-first responsive design
+- ✨ **Modern UI/UX** - Smooth animations and interactions
+- 📝 **Contact Form** - Full validation and API integration
+- 🎯 **Performance Optimized** - Optimized bundles and lazy loading
+
+## 🛠 Tech Stack
+
+- **Frontend Framework**: React.js 18
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS v4
+- **Icons**: Lucide React
+- **Deployment**: Vercel/Netlify
+
+## 📦 Installation & Setup
+
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn
+
