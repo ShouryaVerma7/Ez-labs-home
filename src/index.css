@@ -1,0 +1,118 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Your custom styles here */
+@theme {
+  /* Your custom theme configuration */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  
+  --color-accent-500: #22c55e;
+  --color-accent-600: #16a34a;
+  
+  --font-sans: 'Inter', 'system-ui', 'sans-serif';
+  
+  --animate-fade-in: fadeIn 0.5s ease-in-out;
+  --animate-slide-up: slideUp 0.5s ease-out;
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { 
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to { 
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+/* Custom base styles */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.6;
+  }
+}
+
+/* Custom components */
+@layer components {
+  .btn-primary {
+    background-color: var(--color-primary-500);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+    
+    &:hover {
+      background-color: var(--color-primary-600);
+    }
+    
+    &:focus {
+      outline: 2px solid var(--color-primary-500);
+      outline-offset: 2px;
+    }
+  }
+
+  .btn-secondary {
+    border: 1px solid var(--color-primary-500);
+    color: var(--color-primary-500);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    
+    &:hover {
+      background-color: var(--color-primary-500);
+      color: white;
+    }
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    
+    &:focus {
+      ring: 2px;
+      ring-color: var(--color-primary-500);
+      border-color: transparent;
+    }
+  }
+
+  .card {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    border: 1px solid #e5e7eb;
+    
+    &:hover {
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    }
+  }
+}
